@@ -1,7 +1,8 @@
 @import "tailwindcss";
+@importurl('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Cairo:wght@600;700&display=swap');
 
 :root {
-  --background: #ffffff;
+  --background: rgba(23, 1, 24, 0.963);
   --foreground: #171717;
 }
 
@@ -13,17 +14,396 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: rgba(7, 6, 108, 0.584);
+    --foreground: #da1919;
   }
 }
-nav{
+/* ==============================
+   GLOBAL STYLES
+================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background: #fff;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* ==============================
+   NAVBAR
+================================= */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgb(8,133,211);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+#menue {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+#navbar a:hover {
+  background: rgb(1,54,88);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+#logo {
+  padding: 20px;
+  height: 100px;
+  width: 130px;
+  margin: 10px;
+}
+
+/* Icons */
+#search-icon, #feather-icon {
+  font-size: 30px;
+  margin: 5px 20px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+#search-icon:hover, #feather-icon:hover {
+  transform: scale(1.2);
+}
+
+/* ==============================
+   HERO SECTION
+================================= */
+#container {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+#ph {
+  position:relative;
+  bottom: 90px;
+  width: 100%;
+  height: 545px;
+  object-fit: cover;
+}
+
+#cover {
+  background: black;
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  opacity: 0.2;
+}
+
+#news {
+  font-size: 100px;
+  font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  top:20px;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  text-shadow: 10px 10px 10px black;
+}
+
+/* ==============================
+   FOOTER
+================================= */
+#footer {
+  width: 100%;
+  position: relative;
+  top:400px;
+}
+
+h2 {
+  color: white;
+  background: rgb(1,54,88);
+  text-align: center;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#links {
+  display: flex;
+  gap: 10px;
+  background: rgb(1,54,88);
+  text-align: center;
+  width: 100%;
+  padding: 40px;
+  justify-content: space-around;
+}
+
+#links h1 {
+  font-size: 30px;
+  border-bottom: 2px solid rgb(8,133,211);
+}
+#links a{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+#icon{
+  color:rgb(253, 253, 253);
+  text-align: center;
+  margin: 10px 10px;
+  font-size: 20px;
+  
+}
+#links a:hover, #icon:hover {
+ color: rgb(8,133,211);
+}
+
+/* ==============================
+   HERO NEWS GRID
+================================= */
+#hero {
+  display: block;
+  position: relative;
+  top:200px;
+  margin: 10px;
+  padding: 3px;
+  width: 100%;
+}
+
+#line {
+  width: 100%;
+  margin-bottom: 30px;
+  }
+#line div{
+  text-shadow: 10px 10px 10px  rgb(0, 0, 0);
+  
+}
+#line1 {
+  width: 35%;
+  font-size: 40px;
+  margin: 20px;
+  padding: 20px ;
+  border-radius: 10px;
+  border-bottom: 7px solid rgb(8,133,211);
+}
+
+#new1, #new2, #new3, #new4, #new5, #new6 {
+  border:2px solid rgb(8,133,211);
+  height: 560px;
+   width: 350px;
+  display: inline-block;
+  margin: 20px;
+  transition: 0.1s ease;
+}
+
+#hero div:hover {
+  transform: translateY(-10px);
+}
+
+#hero img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
 }
 
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+#hero button {
+  display: block;
+  margin: 20px auto;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 2px solid rgb(8,133,211);
+  color: white;
+  padding: 15px 60px;
+  background: rgb(8,133,211);
+  cursor: pointer;
+}
+
+#hero button:hover {
+  background: rgb(1,54,88);
+  border: none;
+  transform: scale(1.05);
+}
+
+#hero p {
+  width: 350px;
+  padding: 10px;
+  position: relative;
+  top:10px;
+}
+
+#hero h3 {
+  color: white;
+  background: rgb(1,54,88);
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+}
+
+
+
+/* ==============================
+   CONTENT SECTION 2
+================================= */
+#container2 {
+  width: 100%;
+  display: flex;
+  padding: 40px;
+  margin: 10px;
+  position: relative;
+  top:300px;
+  gap: 30px;
+}
+
+#logo5 {
+  width: 45%;
+  border-radius: 15px;
+  margin: 20px 10px;
+}
+h3,h5{
+  position: relative;
+  top:10px;
+}
+#p1 {
+  font-size: 30px;
+  border-radius: 10px;
+  border-bottom: 5px solid rgb(8,133,211);
+}
+
+#account {
+  width: 12%;
+  position: relative;
+  top:10px;
+}
+
+#p2 {
+  font-size: 15px;
+  color: rgb(108,101,101);
+  margin-top: 10px;
+  position: relative;
+  top:10px;
+}
+
+#icons {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  top:10px;
+  font-size: 20px;
+  color: rgb(255, 255, 47);
+  margin-top: 20px;
+}
+
+
+/* ==============================
+   SUBSCRIBE SECTION
+================================= */
+#container3 {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  top:350px;
+  margin: 20px 10px;
+  background: rgb(177,225,255);
+}
+h1{
+  font-size: 30px;
+}
+#container3 p {
+  color: rgb(108,101,101);
+}
+
+#subscribe-form {
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#subscribe-form input {
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: white;
+  border: 2px solid rgb(8,133,211);
+  font-size: 16px;
+}
+
+#subscribe-form button {
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: rgb(8,133,211);
+  color: white;
+  cursor: pointer;
+}
+
+#subscribe-form button:hover {
+  background: rgb(1,54,88);
+  transform: scale(1.05);
+}
+
+/* ==============================
+   CONTENT SECTION 4
+================================= */
+#container4 {
+  width: 100%;
+  display: flex;
+  padding: 50px;
+  margin: 10px;
+  position: relative;
+  top:250px;
+  gap: 30px;
+  background: rgb(177,225,255);
+}
+
+#ph21 {
+  width: 500px;
+  height: 350px;
+  border-radius: 15px;
+  margin: 20px 30px;
+}
+
+#container4 h1 {
+  font-size: 30px;
+  border-radius: 10px;
+  border-bottom: 5px solid rgb(8,133,211);
+}
+
+#container4 p {
+  font-size: 15px;
+  position: relative;
+  top:50px;
+  color: rgb(108,101,101);
+}
+
+#container4 buttom {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  position: relative;
+  top:80px;
+  background: rgb(8,133,211);
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#container4 buttom:hover {
+  background: rgb(1,54,88);
 }
