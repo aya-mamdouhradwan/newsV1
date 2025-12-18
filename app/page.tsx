@@ -17,14 +17,10 @@ import { ProductProvider } from "./component/ProductContext";
 export default function Home() {
   return (
     <div>
-      <div id="home">
+      <Hero/>
+      <div id="popular">
         <Body />
       </div>
-
-      <div id="popular">
-        <Hero />
-      </div>
-
       <div id="find">
         <Find />
       </div>
@@ -37,9 +33,7 @@ export default function Home() {
         <Ui />
       </div>
 
-      <div id="footer">
-        <Foot />
-      </div>
+      
     </div>
   );
 }

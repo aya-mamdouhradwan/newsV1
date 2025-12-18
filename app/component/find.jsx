@@ -1,22 +1,32 @@
-import Image from "next/image"
-export default function Find(){
-    return(
-        <div id="container4">
-            <div>
-            <h1 id="h11">
-                Find Your News With Us
-            </h1>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Est dolorem eum eaque maxime cumque </p>
-                <p>impedit doloribus soluta sapiente,
-                 molestiae nam perferendis minus consectetur inventore facere,</p> 
-                <p>dolores porro laboriosam itaque eligendi.</p>
-                <p> Dolorum praesentium autem ipsum hic magni sunt illo optio expedita?
-            </p>
-            <buttom id="buttom">Get Now</buttom>
-            </div>
-            <div><Image src="/images/logo.jpg" alt="findph" width={30} height={30} id="ph21"></Image></div>
-        </div>
-    )
-};
+import Image from "next/image";
+
+export default function Find() {
+  return (
+    <section className="find-news-section">
+      <div className="find-content">
+        <h2 className="find-title">Find Your News With Us</h2>
+
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est dolorem eum eaque maxime cumque impedit doloribus soluta sapiente,
+          molestiae nam perferendis minus consectetur inventore facere, dolores porro laboriosam itaque eligendi.
+        </p>
+
+        <p className="find-extra">
+          Dolorum praesentium autem ipsum hic magni sunt illo optio expedita?
+        </p>
+
+        <button className="find-button">Get Now</button>
+      </div>
+
+      <div className="find-image">
+        <Image
+          src="/images/logo.jpg"
+          alt="find-news"
+          width={200}
+          height={200}
+          className="rounded-image"
+        />
+      </div>
+    </section>
+  );
+}
