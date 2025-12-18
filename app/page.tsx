@@ -17,19 +17,6 @@ import { ProductProvider } from "./component/ProductContext";
 export default function Home() {
   return (
     <div>
-      <Navbar/>
-      
-      <FiAlignJustify/>
-      <CiSearch/>
-      <RxDividerVertical/>
-      <ProductProvider>
-        <Body/>
-        <Hero/>
-        <Find/>
-        <Opinion/>
-        <Ui/>
-        <Foot/>
-      </ProductProvider>
       <div id="home">
         <Body />
       </div>
