@@ -32,7 +32,9 @@ export default function Home() {
       <div id="subscribe">
         <Ui />
       </div>
-
+      <div id="foot">
+        <Foot/>
+      </div>
       
     </div>
   );
