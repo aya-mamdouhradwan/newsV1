@@ -14,7 +14,7 @@ export default function Foot(){
             </div>
             <div id="links">
                 <div id="footimg">
-                    <Image src="/images/logo.jpg" width={100} height={30}></Image>
+                    <Image src="/images/logo.jpg" alt="footph" width={100} height={30}></Image>
                 </div>
                 <div id="l1">
                     <h1>Home</h1>

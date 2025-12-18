@@ -9,7 +9,7 @@ export default function Body(){
             <h1 id="line1">Our Popular News</h1>
              </div>
          <div id="new1">
-            <Image src="/images/photo15.jpg" width={300} height={150}/>
+            <Image src="/images/photo15.jpg" alt="photo1" width={300} height={150}/>
             
             <h3>23 Nov, 2025</h3>
             <p>
@@ -21,7 +21,7 @@ export default function Body(){
             </p>
          </div>
          <div id="new2">
-            <Image src="/images/photo16.jpg" width={300} height={300}/>
+            <Image src="/images/photo16.jpg" alt="photo2" width={300} height={300}/>
             <h3>23 Nov, 2025</h3>
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing 
@@ -33,7 +33,7 @@ export default function Body(){
             </p>
          </div>
          <div id="new3">
-         <Image src="/images/photo17.jpg" width={300} height={300}/>
+         <Image src="/images/photo17.jpg" alt="photo3" width={300} height={300}/>
          <h3>23 Nov, 2025</h3>
          <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, recusandae.
@@ -44,7 +44,7 @@ export default function Body(){
          </p>
          </div>
          <div id="new4">
-         <Image src="/images/photo18.jpg" width={300} height={300}/>
+         <Image src="/images/photo18.jpg" alt="photo4" width={300} height={300}/>
          <h3>23 Nov, 2025</h3>
          <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, blanditiis!
@@ -56,7 +56,7 @@ export default function Body(){
          </p>
          </div>
          <div id="new5">
-         <Image src="/images/photo12.jpg" width={300} height={300}/>
+         <Image src="/images/photo12.jpg" alt="photo5" width={300} height={300}/>
          <h3>23 Nov, 2025</h3>
          <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, fuga.
@@ -67,7 +67,7 @@ export default function Body(){
          </p>
          </div>
          <div id="new6">
-         <Image src="/images/photo14.jpg" width={300} height={300}/>
+         <Image src="/images/photo14.jpg" alt="photo6" width={300} height={300}/>
          <h3>23 Nov, 2025</h3>
          <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, magni?

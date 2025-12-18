@@ -16,7 +16,7 @@ export default function Find(){
             </p>
             <buttom id="buttom">Get Now</buttom>
             </div>
-            <div><Image src="/images/logo.jpg" width={30} height={30} id="ph21"></Image></div>
+            <div><Image src="/images/logo.jpg" alt="findph" width={30} height={30} id="ph21"></Image></div>
         </div>
     )
 };

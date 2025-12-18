@@ -7,26 +7,20 @@ export default function Navbar() {
     <div id="navbar">
       <Image src="/images/logo.jpg" id="logo" width={80} height={80} alt="logo"></Image>
       <div id="menue">
-        <a href="/" className="text-black   px-6 py-2 rounded-md transition duration-200">
+        <a href="#home" className="text-black   px-6 py-2 rounded-md transition duration-200">
          Home
         </a>
-        <a href="/play" className="text-black  px-6 py-2 rounded-md transition duration-200">
-          pages
+        <a href="#popular" className="text-black  px-6 py-2 rounded-md transition duration-200">
+          OurPobularNews
         </a>
-        <a href="/about" className="text-black  px-6 py-2 rounded-md transition duration-200">
-          Servives
+        <a href="#find" className="text-black  px-6 py-2 rounded-md transition duration-200">
+          FindNews
         </a>
-        <a href="/contact" className="text-black  px-6 py-2 rounded-md transition duration-200">
-          Blog
+        <a href="#feedback" className="text-black  px-6 py-2 rounded-md transition duration-200">
+          Feedback
         </a>
-        <a href="/settings" className="text-black  px-6 py-2 rounded-md transition duration-200">
-        Shops
-        </a>
-        <a href="/settings" className="text-black  px-6 py-2 rounded-md transition duration-200">
-          Setting
-        </a>
-        <a href="/settings" className="text-black  px-6 py-2 rounded-md transition duration-200">
-         Another News
+        <a href="#subscribe" className="text-black  px-6 py-2 rounded-md transition duration-200">
+        Subscribe
         </a>
         
       </div>
