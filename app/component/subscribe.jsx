@@ -1,6 +1,6 @@
 'use client';
 
-export default function Ui() {
+export default function Subscribe() {
   return (
     <section className="newsletter-section">
       <div className="newsletter-content">

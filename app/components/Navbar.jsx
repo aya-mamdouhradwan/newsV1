@@ -25,8 +25,6 @@ export default function Navbar() {
         </div>
 
         <div className="icons">
-          <CiSearch className="block md:hidden" size={28} />
-          <RxDividerVertical className="block md:hidden" size={28} />
           <FiAlignJustify
             className="block md:hidden"
             size={28}

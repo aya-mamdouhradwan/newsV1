@@ -2,22 +2,17 @@
 import Hero from "./component/hero";
 import Body from "./component/body";
 import Opinion from "./component/opinion";
-import Ui from "./component/ui";
+import Subscribe from "./component/subscribe";
 import Find from "./component/find"
 import Foot from "./component/foot";
-import Navbar from "./components/Navbar";
-import {CiSearch} from "react-icons/ci";
-import {FiAlignJustify} from "react-icons/fi";
-import { RxDividerVertical} from "react-icons/rx";
-
-import { ProductProvider } from "./component/ProductContext";
-
-
 
 export default function Home() {
   return (
     <div>
-      <Hero/>
+      
+      <div id="home">
+        <Hero/>
+      </div>
       <div id="popular">
         <Body />
       </div>
@@ -30,7 +25,7 @@ export default function Home() {
       </div>
 
       <div id="subscribe">
-        <Ui />
+        <Subscribe />
       </div>
       <div id="foot">
         <Foot/>
